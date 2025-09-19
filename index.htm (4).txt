@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume and Priyadharshini Mobiles</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #222;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ff9800;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Shop */
+    .shop-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 12px 0;
+    }
+
+    /* Buttons */
+    .buy-btn, .details-btn {
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin: 5px;
+    }
+
+    .buy-btn {
+      background: #ff9800;
+      color: white;
+    }
+
+    .buy-btn:hover {
+      background: #e68900;
+    }
+
+    .details-btn {
+      background: #2196f3;
+      color: white;
+    }
+
+    .details-btn:hover {
+      background: #1976d2;
+    }
+
+    /* Resume */
+    .resume {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .resume h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .resume p {
+      margin: 6px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1> Resume and Priyadharshini Mobiles</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#shop">Shop</a></li>
+    </ul>
+  </div>
+
+  <!-- Home -->
+  <section id="home">
+    <h2></h2>
+    <p>Your trusted shop for the latest smartphones.</p>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <div class="resume">
+      <h2>Resume - Priyanka Ramar</h2>
+      <p><b>Phone:</b> +91 9787892360</p>
+      <p><b>Email:</b> priyankaramar30@gmail.com</p>
+      <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/priyanka-r-bb1a5437a" target="_blank">Profile</a></p>
+      <h3>Career Objective</h3>
+      <p>To obtain a challenging role in electronics and communication engineering...</p>
+      <h3>Education</h3>
+      <p>B.E Electronics & Communication (2022–2026), CGPA: 8.27</p>
+      <p>HSC: 72% | SSLC: 76.8%</p>
+      <h3>Skills</h3>
+      <p>Python, MATLAB, MS Office, Web Development (HTML, CSS, JS)</p>
+      <h3>Projects</h3>
+      <p>Network Essentials, Data Analytics Essentials (Cisco)</p>
+      <h3>Activities</h3>
+      <p>NSS Volunteer, Junior Red Cross</p>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section id="shop">
+    <h2>Priyadharshini Mobiles</h2>
+    <div class="shop-container">
+      
+      <!-- ✅ Redmi Phone (Replaced with Redmi Note 13 Pro+) -->
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-13-pro-plus-1.jpg" alt="Redmi Note 13 Pro+">
+        <h3>Redmi Note 13 Pro+</h3>
+        <button class="buy-btn" onclick="buyNow('Redmi Note 13 Pro+')">Buy Now</button>
+        <button class="details-btn" onclick="viewDetails('Redmi Note 13 Pro+')">View Details</button>
+      </div>
+
+      <!-- OnePlus -->
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-11-1.jpg" alt="OnePlus">
+        <h3>OnePlus</h3>
+        <button class="buy-btn" onclick="buyNow('OnePlus')">Buy Now</button>
+        <button class="details-btn" onclick="viewDetails('OnePlus')">View Details</button>
+      </div>
+
+      <!-- Samsung Galaxy S23 Ultra -->
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s23-ultra-5g-1.jpg" alt="Samsung Galaxy S23 Ultra">
+        <h3>Samsung Galaxy S23 Ultra</h3>
+        <button class="buy-btn" onclick="buyNow('Samsung Galaxy S23 Ultra')">Buy Now</button>
+        <button class="details-btn" onclick="viewDetails('Samsung Galaxy S23 Ultra')">View Details</button>
+      </div>
+
+      <!-- iPhone 14 Pro -->
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-1.jpg" alt="iPhone 14 Pro">
+        <h3>iPhone 14 Pro</h3>
+        <button class="buy-btn" onclick="buyNow('iPhone 14 Pro')">Buy Now</button>
+        <button class="details-btn" onclick="viewDetails('iPhone 14 Pro')">View Details</button>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function buyNow(product) {
+      alert("Thank you for choosing " + product + "! Our team will contact you soon.");
+    }
+
+    function viewDetails(product) {
+      alert("Showing more details about " + product + "...");
+    }
+  </script>
+
+</body>
+</html>
